@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/compiler/bootstrap.css"
+    />
+    <link rel="stylesheet" href="node_modules/bootstrap/compiler/styles.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Pacifico"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- <style type="text/css">
+      /* body {
+        font-size: 62.5%;
+        font-family: Arial, Helvetica, sans-serif;
+      } */
+
+      #websiteTitle {
+        /* position: absolute; */
+        /* font-size: 2em; */
+        vertical-align: middle;
+        text-align: center;
+        font-family: "Pacifico", recursive;
+        color: #191970;
+      }
+
+      .navbar-text {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        font-size: 2em;
+        text-align: center;
+        margin: auto;
+        padding-top: 10px;
+        font-family: "Pacifico", recursive;
+        color: blue;
+      }
+
+      .carousel-caption {
+        right: 0;
+        text-align: left;
+        vertical-align: top;
+        /* background-color: darkgrey; */
+        max-width: 300px;
+        margin-right: 300px;
+        color: red;
+      }
+    </style> -->
+
+    <title>Lanches Sebastião, o melhor do Brasil</title>
+  </head>
+
+  <body>
+    <!-- <h1>Hello World!</h1> -->
+
+    <!-- <a href="#" class="btn btn-primary">Teste de botão</a> -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-gradient-light">
+      <div class="container">
+        <a class="navbar-brand h1 mb-0" href="#"> </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSite"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <a class="pull-left" href="#"><img src="img/hamburguer.png"/></a>
+
+        <div class="collapse navbar-collapse" id="navbarSite">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Início</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sobre</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-toggle="dropdown"
+                id="navDrop"
+              >
+                Contatos
+              </a>
+
+              <!-- Itens do dropdown -->
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">
+                  <img src="img/facebook.png" />
+                  Facebook
+                </a>
+                <a class="dropdown-item" href="#">
+                  <img src="img/whatsapp.png" />
+                  WhastApp
+                </a>
+                <a class="dropdown-item" href="#">
+                  <img src="img/gmail.png" />
+                  E-mail
+                </a>
+              </div>
+              <!-- fim dropdown -->
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Mapa</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- bug doido -->
+        <div class="navbar-text col-md-3">
+          <p id="websiteTitle">
+            Lanchonete Sebastião
+          </p>
+        </div>
+
+        <!-- class="navbar-form navbar-center????" -->
+        <!-- <span id="websiteTitle"> -->
+        <!-- Lanchonete Sebastião -->
+        <!-- </span> -->
+
+        <!-- outra forma -->
+        <!-- <form class="form-inline">
+          <input
+            class="form-control"
+            type="search"
+            placeholder="Dúvidas?
+          Procure aqui!"
+          />
+        </form> -->
+
+        <form class="navbar-form navbar-right" role="search">
+          <!-- LEMBRAR DO MALDITO MB-0 -->
+          <div class="form-group mb-0">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Dúvidas? Procure aqui!"
+            />
+          </div>
+        </form>
+      </div>
+    </nav>
+    <!-- end of navbar -->
+
+    <!-- Carousel -->
+
+    <div id="mainCarousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="mainCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="mainCarousel" data-slide-to="1"></li>
+        <li data-target="mainCarousel" data-slide-to="2"></li>
+      </ol>
+
+      <div class="container">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/slide-01.jpg" class="img-fluid d-block" />
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Melhores Lanches</h3>
+              <p>
+                Preparado meticulosamente para atender todos os públicos.
+                Versões LowCarb e sem Lactose.
+              </p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="img/slide-02.png" class="img-fluid d-block" />
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Melhor hamburguer vegetariano feito na grelha</h3>
+              <p>
+                Verdadeiro gosto da carne.
+              </p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="img/slide-03.png" class="img-fluid d-block" />
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Vencedor Mastercheff 2040</h3>
+              <p>
+                Agradou Jacquin em todas provas.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <a
+          class="carousel-control-prev"
+          href="#mainCarousel"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+          <span class="sr-only">Anterior</span>
+        </a>
+
+        <a
+          class="carousel-control-next"
+          href="#mainCarousel"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+          <span class="sr-only">Próximo</span>
+        </a>
+      </div>
+    </div>
+    <!-- fim carousel -->
+
+    <!--Google map-->
+    <div class="container my-5">
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-md-6 mb-4">
+          <!--Card-->
+          <div class="card card-cascade narrower">
+            <!--Card image-->
+            <div class="view view-cascade gradient-card-header peach-gradient">
+              <h5 class="mb-0">Nossa Localização</h5>
+            </div>
+            <!--/Card image-->
+
+            <!--Card content-->
+            <div class="card-body card-body-cascade text-center">
+              <!--Google map-->
+              <div
+                id="map-container-google-9"
+                class="z-depth-1-half map-container-5"
+                style="height: 300px"
+              >
+                <iframe
+                  src="https://maps.google.com/maps?q=SãoJosédoRioPreto&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                  frameborder="0"
+                  style="border:0"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+            <!--/.Card content-->
+          </div>
+          <!--/.Card-->
+        </div>
+      </div>
+    </div>
+    <!--Google Maps-->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/@popperjs/core/dist/umd/popper.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  </body>
+</html>
